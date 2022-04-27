@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "test-storybook": "test-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -61,14 +62,19 @@
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-interactions": "^6.4.22",
     "@storybook/addon-links": "^6.4.9",
+    "@storybook/jest": "^0.0.10",
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.4.0-beta.23",
+    "@storybook/test-runner": "^0.0.7",
+    "@storybook/testing-library": "^0.0.11",
     "@storybook/testing-react": "^1.0.0-next.0",
     "concurrently": "^7.0.0",
     "cypress": "^8.2.0",
     "eslint-plugin-storybook": "^0.1.1",
+    "jest": "^28.0.2",
     "jest-axe": "^5.0.1",
     "msw": "^0.32.0",
     "msw-storybook-addon": "^1.4.1"
