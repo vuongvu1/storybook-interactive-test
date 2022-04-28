@@ -11,8 +11,8 @@ jobs:
           node-version: "14.x"
       - name: Install dependencies
         run: yarn
-      # - name: Install Playwright
-      #   run: npx playwright install --with-deps
+      - name: Install Playwright
+        run: npx playwright install --with-deps
       # - name: Build Storybook
       #   run: yarn build-storybook --quiet
       - name: Serve Storybook and run tests
