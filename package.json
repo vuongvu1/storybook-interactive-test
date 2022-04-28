@@ -84,6 +84,6 @@
     "workerDirectory": "public"
   },
   "resolutions": {
-    "react-scripts/jest": "27.2.3"
+    "react-scripts/jest": "^27.5.1"
   }
 }
