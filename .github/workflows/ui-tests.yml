@@ -11,5 +11,7 @@ jobs:
           node-version: "14.x"
       - name: Install dependencies
         run: yarn
-      - name: Run Storybook tests
-        run: yarn test-storybook:ci
+      # - name: Run Storybook tests
+      #   run: yarn test-storybook:ci
+      - name: test-------------------
+        run: npm ls jest
