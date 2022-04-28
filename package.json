@@ -24,7 +24,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "cypress": "cypress open",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\""
   },
   "eslintConfig": {
     "extends": [
@@ -74,7 +75,7 @@
     "concurrently": "^7.0.0",
     "cypress": "^8.2.0",
     "eslint-plugin-storybook": "^0.1.1",
-    "jest": "^28.0.2",
+    "jest": "^27.5.1",
     "jest-axe": "^5.0.1",
     "msw": "^0.32.0",
     "msw-storybook-addon": "^1.4.1"
